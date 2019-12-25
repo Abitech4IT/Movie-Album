@@ -1,0 +1,54 @@
+<div class="card">
+    <div class="card-header"> 
+        {{pageTitle + ": " + movie.title}}
+    </div>
+    <div class="card-body" *ngIf="movie">
+        <div class="row">
+            <div class="col-md-4" *ngIf="movie.imageUrl" >
+                <img [src]="movie.imageUrl" [title]="movie.title"
+                class="center-block img-responsive"
+                [style.height.px]="150"
+                [style.margin.px]="2" />
+            </div>
+            <div class="col-md-8" >
+                <div class="row">
+                    <div class="col-md-3">Actor:</div>
+                    <div class="col-md-6"> {{movie.actor}} </div>
+                </div>
+                <div class="row">
+                     <div class="col-md-3">Producer:</div>
+                     <div class="col-md-6"> {{movie.producer}} </div>
+                 </div>
+                 <div class="row">
+                    <div class="col-md-3">Date:</div>
+                    <div class="col-md-6">  {{movie.date}} </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">Country:</div>
+                    <div class="col-md-6">  {{movie.country}} </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">Language:</div>
+                    <div class="col-md-6">  {{movie.language}} </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">Runtime:</div>
+                    <div class="col-md-6">  {{movie.runtime}} </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">Director:</div>
+                    <div class="col-md-6">  {{movie.director}} </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">Rating:</div>
+                    <div class="col-md-6">  {{movie.rating}} </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">Writer:</div>
+                    <div class="col-md-6">  {{movie.writer}} </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

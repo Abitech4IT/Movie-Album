@@ -1,0 +1,12 @@
+<div class="row">
+    <div *ngFor="let movie of movies" class="col-md-4">
+        <div class="card">
+            <a [routerLink]="['/movies', movie.id]">
+            <img class="card-img-top"  [src]="movie.imageUrl" [title]="movie.title" /></a>
+            <div class="card-body">
+                <h6>Title: {{movie.title}}</h6>
+                <h6>Year: {{movie.date}}</h6>
+            </div>
+        </div>
+    </div>
+</div>
